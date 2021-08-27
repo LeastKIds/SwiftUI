@@ -12,6 +12,7 @@
 		5560D6F426D8AFAC0050A7C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5560D6F326D8AFAC0050A7C3 /* Assets.xcassets */; };
 		5560D6F726D8AFAC0050A7C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5560D6F626D8AFAC0050A7C3 /* Preview Assets.xcassets */; };
 		5560D70126D8B5650050A7C3 /* MyVstackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5560D70026D8B5650050A7C3 /* MyVstackView.swift */; };
+		558D027626D8C7E100ECF509 /* MyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558D027526D8C7E100ECF509 /* MyTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5560D6F626D8AFAC0050A7C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5560D6F826D8AFAC0050A7C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5560D70026D8B5650050A7C3 /* MyVstackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVstackView.swift; sourceTree = "<group>"; };
+		558D027526D8C7E100ECF509 /* MyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				5560D6F826D8AFAC0050A7C3 /* Info.plist */,
 				5560D6F526D8AFAC0050A7C3 /* Preview Content */,
 				5560D70026D8B5650050A7C3 /* MyVstackView.swift */,
+				558D027526D8C7E100ECF509 /* MyTextView.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5560D6F226D8AFAB0050A7C3 /* ContentView.swift in Sources */,
+				558D027626D8C7E100ECF509 /* MyTextView.swift in Sources */,
 				5560D6F026D8AFAB0050A7C3 /* TestApp.swift in Sources */,
 				5560D70126D8B5650050A7C3 /* MyVstackView.swift in Sources */,
 			);
