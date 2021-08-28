@@ -19,9 +19,10 @@ struct ContentView: View {
             
             VStack {
                 HStack {
-                    MyVstackView()
-                    MyVstackView()
-                    MyVstackView()
+                    MyVstackView(isActivated: $isActivated)
+                    MyVstackView(isActivated: $isActivated)
+                    MyVstackView(isActivated: $isActivated)
+
 
                 }
                 .padding(isActivated ? 50 : 10)
@@ -40,7 +41,7 @@ struct ContentView: View {
                     
                 }   // HStack
                 
-                NavigationLink(destination: MyTextView()) {
+                NavigationLink(destination: MyTextView(isActivated: $isActivated)) {
                     Text("네비게이션")
                         .fontWeight(.bold)
                         .font(.system(size : 40))

@@ -12,6 +12,13 @@ struct MyTextView: View {
     @State
     private var index: Int = 0
     
+    @Binding
+    var isActivated: Bool
+    
+    init(isActivated: Binding<Bool> = .constant(false)) {
+        _isActivated = isActivated
+    }
+    
     //배경색 배열 준비
     private let backgroundColors = [
         Color.red,
@@ -28,8 +35,14 @@ struct MyTextView: View {
             Text("배경 아이템 인덱스 \(self.index + 1)")
                 .font(.system(size : 30))
                 .fontWeight(.bold)
-//                .frame(minWidth : 0, maxWidth: .infinity,
-//                       minHeight: 0, maxHeight: .infinity)
+                .frame(minWidth : 0, maxWidth: .infinity,
+                       minHeight: 0, maxHeight: 100)
+            
+            Text("버튼이 상태 : \(String(self.isActivated))")
+                .font(.system(size : 30))
+                .fontWeight(.bold)
+                .foregroundColor(self.isActivated ? Color.yellow : Color.gray)
+                .background(Color.black)
             
             Spacer()
         }   // VStack
