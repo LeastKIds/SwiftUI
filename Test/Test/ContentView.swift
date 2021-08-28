@@ -40,7 +40,7 @@ struct ContentView: View {
                     
                 }   // HStack
                 
-                NavigationLink(destination: Text("호호")) {
+                NavigationLink(destination: MyTextView()) {
                     Text("네비게이션")
                         .fontWeight(.bold)
                         .font(.system(size : 40))
