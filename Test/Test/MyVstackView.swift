@@ -10,13 +10,12 @@ import SwiftUI
 struct MyVstackView : View {
     
     // data connection
-    @Binding
     var isActivated: Bool
     
     // 생성자
-    init(isActivated: Binding<Bool> = .constant(false)) {
-        _isActivated = isActivated
-    }
+//    init(isActivated: Binding<Bool> = .constant(false)) {
+//        _isActivated = isActivated
+//    }
     
    
    var body: some View {
@@ -38,8 +37,8 @@ struct MyVstackView : View {
 }
 
 // 보여주는 용도
-struct MyVstackView_Previews: PreviewProvider {
-    static var previews: some View {
-        MyVstackView()
-    }
-}
+//struct MyVstackView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MyVstackView()
+//    }
+//}

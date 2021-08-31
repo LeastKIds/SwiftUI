@@ -19,9 +19,9 @@ struct ContentView: View {
             
             VStack {
                 HStack {
-                    MyVstackView(isActivated: $isActivated)
-                    MyVstackView(isActivated: $isActivated)
-                    MyVstackView(isActivated: $isActivated)
+                    MyVstackView(isActivated: isActivated)
+                    MyVstackView(isActivated: isActivated)
+                    MyVstackView(isActivated: isActivated)
 
 
                 }
