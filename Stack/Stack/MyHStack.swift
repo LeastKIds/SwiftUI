@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MyHStack : View {
     
+    var img : String = "flame.fill"
+    
     var body: some View {
         
         HStack (alignment: .bottom){
@@ -22,7 +24,7 @@ struct MyHStack : View {
 //            Rectangle()
 //                .frame(width: 100, height: 100)
 //                .foregroundColor(Color.red)
-            Image(systemName: "flame.fill")
+            Image(systemName: self.img)
                 .foregroundColor(Color.white)
                 .font(.system(size : 70))
             
