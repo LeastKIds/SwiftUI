@@ -18,21 +18,21 @@ struct Pannel : View {
     
     var body: some View {
         
-        VStack (alignment : .leading){
-            
-            Divider()
-                .opacity(0)
+    
             
             HStack {
                 
-                Divider()
-                    .opacity(0)
+//                Divider()
+//                    .opacity(0)
                 
                 Image(systemName : self.img)
                     .font(.system(size : 50))
                     .foregroundColor(self.imgColor)
                 
                 VStack (alignment : .leading){
+                    
+//                    Divider().opacity(0)
+                    Rectangle().frame(height:0)
                     
                     
                     Text(self.title)
@@ -48,9 +48,8 @@ struct Pannel : View {
                 }
                     
                 
-            }   // HStack
-        }
-        .frame(width : 380, height : 80)
+            }
+            .padding()// HStack
         .background(self.color)
         .cornerRadius(10)
     }

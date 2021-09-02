@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Project : View {
     
+    @State var shouldShowAlert: Bool = false
+    
     var title : String = "test"
     var color : Color = Color.yellow
     var time : String = "time"
@@ -17,8 +19,11 @@ struct Project : View {
         
         VStack (alignment: .leading){
             
-                Divider()
-                    .opacity(0)
+//                Divider()
+//                    .opacity(0)
+            
+            Rectangle()
+                .frame(height:0)
             
             
                 Text(self.title)
@@ -27,39 +32,52 @@ struct Project : View {
                 
                 Text(self.time)
                     .font(.system(size : 15))
-                    .foregroundColor(Color.gray)
-                    .padding(.bottom,20)
+                    .foregroundColor(Color.secondary)
+            
+            Spacer().frame(height : 20)
             
             HStack (spacing:15){
                 Image("img1")
+                    .resizable()
                     .frame(width : 50, height: 50)
                     .clipShape(Circle())
                     .overlay(Circle()
                                 .stroke(Color.blue,lineWidth: 5))
                 
                 Image("img2")
+                    .resizable()
                     .frame(width : 50, height : 50)
                     .clipShape(Circle())
                 
                 Image("img3")
+                    .resizable()
                     .frame(width : 50, height: 50)
                     .clipShape(Circle())
                 
-                Text("확인")
-                    .font(.system(size : 20))
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.white)
-                    .padding(20)
-                    .background(Color.blue)
-                    .cornerRadius(20)
-                    .padding(.leading, 60)
+                Spacer()
+                
+                Button(action : {
+                    print("확인 버튼이 눌렸어")
+                    self.shouldShowAlert = true
+                }) {
+                    Text("확인")
+                        .font(.system(size : 20))
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.white)
+                        .padding()
+                        .frame(width : 80)
+                        .background(Color.blue)
+                        .cornerRadius(20)
+                }.alert(isPresented: $shouldShowAlert) {
+                    Alert(title:Text("경고창"))
+                }
+               
                     
                 
             }   // HStack
 
             }   //Vstack
-            .padding(.leading,25)
-            .frame(width : 380, height : 180)
+            .padding(30)
             .background(self.color)
             .cornerRadius(10)
         
