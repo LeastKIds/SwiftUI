@@ -16,9 +16,14 @@ struct MyGeometryReaderVStack : View {
     
     @State var index : Index = .one
     
+    let centerPosition : (GeometryProxy) -> CGPoint = { proxy in
+        return CGPoint(x : proxy.frame(in: .local).midX,
+                       y : proxy.frame(in: .local).midY)
+    }
+    
     var body: some View {
         
-        GeometryReader { geometry in
+        GeometryReader { proxy in
             
             VStack {
                 
@@ -34,7 +39,7 @@ struct MyGeometryReaderVStack : View {
                     Text("1")
                         .font(.largeTitle)
                         .fontWeight(.black)
-                        .frame(width : 100, height: geometry.size.height/3)
+                        .frame(width : 100, height: proxy.size.height/3)
                         .padding(.horizontal, self.index == .one ? 50 : 0)
                         .foregroundColor(Color.white)
                         .background(Color.red)
@@ -50,7 +55,7 @@ struct MyGeometryReaderVStack : View {
                     Text("2")
                         .font(.largeTitle)
                         .fontWeight(.black)
-                        .frame(width : 100, height: geometry.size.height/3)
+                        .frame(width : 100, height: proxy.size.height/3)
                         .padding(.horizontal, self.index == .two ? 50 : 0)
                         .foregroundColor(Color.white)
                         .background(Color.blue)
@@ -69,7 +74,7 @@ struct MyGeometryReaderVStack : View {
                     Text("3")
                         .font(.largeTitle)
                         .fontWeight(.black)
-                        .frame(width : 100, height: geometry.size.height/3)
+                        .frame(width : 100, height: proxy.size.height/3)
                         .padding(.horizontal, self.index == .three ? 50 : 0)
                         .foregroundColor(Color.white)
                         .background(Color.green)
@@ -77,6 +82,7 @@ struct MyGeometryReaderVStack : View {
                 
                 
             }
+            .position(centerPosition(proxy))
             
         }   // geometryReader
         .background(Color.yellow)
