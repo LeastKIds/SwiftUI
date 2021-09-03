@@ -35,8 +35,12 @@ struct ContentView: View {
                         
                         Spacer()
                         
-                        Image(systemName: "person.crop.circle.fill")
-                            .font(.largeTitle)
+                        NavigationLink(destination : Profile(isNavigationBarHidden: $isNavigationBarHidden)) {
+                            Image(systemName: "person.crop.circle.fill")
+                                .font(.largeTitle)
+                                .foregroundColor(Color.black)
+                        }
+                       
                     }
                     .padding(.horizontal, 20)
                     
