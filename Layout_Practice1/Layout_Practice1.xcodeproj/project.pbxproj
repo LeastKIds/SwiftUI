@@ -18,6 +18,8 @@
 		55E4706126E1D34D00A83040 /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E4706026E1D34D00A83040 /* MyWebView.swift */; };
 		55E4706426E1D36D00A83040 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E4706326E1D36D00A83040 /* CircleImageView.swift */; };
 		55E4706726E1D39300A83040 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E4706626E1D39300A83040 /* Profile.swift */; };
+		55E4706A26E1EE3900A83040 /* MyGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E4706926E1EE3900A83040 /* MyGeometryReader.swift */; };
+		55E4706D26E2089E00A83040 /* MyGeometryReaderVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E4706C26E2089E00A83040 /* MyGeometryReaderVStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		55E4706026E1D34D00A83040 /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
 		55E4706326E1D36D00A83040 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		55E4706626E1D39300A83040 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		55E4706926E1EE3900A83040 /* MyGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGeometryReader.swift; sourceTree = "<group>"; };
+		55E4706C26E2089E00A83040 /* MyGeometryReaderVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGeometryReaderVStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				55E4706026E1D34D00A83040 /* MyWebView.swift */,
 				55E4706326E1D36D00A83040 /* CircleImageView.swift */,
 				55E4706626E1D39300A83040 /* Profile.swift */,
+				55E4706926E1EE3900A83040 /* MyGeometryReader.swift */,
+				55E4706C26E2089E00A83040 /* MyGeometryReaderVStack.swift */,
 			);
 			path = Layout_Practice1;
 			sourceTree = "<group>";
@@ -160,9 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				55E4706426E1D36D00A83040 /* CircleImageView.swift in Sources */,
+				55E4706D26E2089E00A83040 /* MyGeometryReaderVStack.swift in Sources */,
 				55D2E96C26DF7CE9009754C8 /* ContentView.swift in Sources */,
 				55D2E97D26DF8637009754C8 /* Pannel.swift in Sources */,
 				55E4705E26E1CF8600A83040 /* MyNavigationView.swift in Sources */,
+				55E4706A26E1EE3900A83040 /* MyGeometryReader.swift in Sources */,
 				55D2E96A26DF7CE9009754C8 /* Layout_Practice1App.swift in Sources */,
 				55E4706126E1D34D00A83040 /* MyWebView.swift in Sources */,
 				55D2E97A26DF7D3A009754C8 /* Project.swift in Sources */,

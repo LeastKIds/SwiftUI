@@ -11,8 +11,9 @@ import SwiftUI
 struct Layout_Practice1App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
 //            MyList()
+            MyGeometryReaderVStack()
         }
     }
 }
