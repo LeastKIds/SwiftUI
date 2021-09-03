@@ -20,6 +20,8 @@
 		55E4706726E1D39300A83040 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E4706626E1D39300A83040 /* Profile.swift */; };
 		55E4706A26E1EE3900A83040 /* MyGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E4706926E1EE3900A83040 /* MyGeometryReader.swift */; };
 		55E4706D26E2089E00A83040 /* MyGeometryReaderVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E4706C26E2089E00A83040 /* MyGeometryReaderVStack.swift */; };
+		55E4707026E2279B00A83040 /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E4706F26E2279B00A83040 /* MyTabView.swift */; };
+		55E4707326E2293400A83040 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E4707226E2293400A83040 /* MyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		55E4706626E1D39300A83040 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		55E4706926E1EE3900A83040 /* MyGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGeometryReader.swift; sourceTree = "<group>"; };
 		55E4706C26E2089E00A83040 /* MyGeometryReaderVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGeometryReaderVStack.swift; sourceTree = "<group>"; };
+		55E4706F26E2279B00A83040 /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		55E4707226E2293400A83040 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				55E4706626E1D39300A83040 /* Profile.swift */,
 				55E4706926E1EE3900A83040 /* MyGeometryReader.swift */,
 				55E4706C26E2089E00A83040 /* MyGeometryReaderVStack.swift */,
+				55E4706F26E2279B00A83040 /* MyTabView.swift */,
+				55E4707226E2293400A83040 /* MyView.swift */,
 			);
 			path = Layout_Practice1;
 			sourceTree = "<group>";
@@ -175,7 +181,9 @@
 				55E4706126E1D34D00A83040 /* MyWebView.swift in Sources */,
 				55D2E97A26DF7D3A009754C8 /* Project.swift in Sources */,
 				55E4706726E1D39300A83040 /* Profile.swift in Sources */,
+				55E4707026E2279B00A83040 /* MyTabView.swift in Sources */,
 				55E4705726E0A28800A83040 /* MyList.swift in Sources */,
+				55E4707326E2293400A83040 /* MyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

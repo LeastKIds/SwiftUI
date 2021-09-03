@@ -13,7 +13,8 @@ struct Layout_Practice1App: App {
         WindowGroup {
 //            ContentView()
 //            MyList()
-            MyGeometryReaderVStack()
+//            MyGeometryReaderVStack()
+            MyTabView()
         }
     }
 }
