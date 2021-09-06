@@ -14,7 +14,8 @@ struct Layout_Practice1App: App {
 //            ContentView()
 //            MyList()
 //            MyGeometryReaderVStack()
-            MyTabView()
+//            MyTabView()
+            MyCustomTabView()
         }
     }
 }

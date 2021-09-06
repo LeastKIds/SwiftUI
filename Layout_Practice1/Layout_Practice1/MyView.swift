@@ -15,12 +15,13 @@ struct MyView : View {
     var body: some View {
         ZStack {
             bgColor
-                .edgesIgnoringSafeArea(.all)
+//                .edgesIgnoringSafeArea(.all)
             Text(self.title)
                 .font(.largeTitle)
                 .fontWeight(.black)
                 .foregroundColor(Color.white)
-        }
+        }   // ZStack
+        .animation(.none)
     }
 }
 
