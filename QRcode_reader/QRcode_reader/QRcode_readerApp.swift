@@ -11,7 +11,8 @@ import SwiftUI
 struct QRcode_readerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            QRCodeScannerExampleView()
         }
     }
 }
