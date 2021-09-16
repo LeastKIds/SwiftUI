@@ -34,7 +34,7 @@ struct ContentView: View {
                     }
                     
                 }
-            }
+            }   // HStack
             
             HStack {
                 SecureField("비밀번호를 입력해 주세요", text : $password)
@@ -53,12 +53,16 @@ struct ContentView: View {
                     }
                     
                 }
+            }   // HStack
+        
+            Text("입력한 비번 : \(password)")
+            
+            if(self.password.count > 0) {
+                Text("test")
             }
             
-            
-            
-            Text("입력한 비번 : \(password)")
-        }
+
+        }   // VStack
         .padding(.horizontal, 50)
         
     }
