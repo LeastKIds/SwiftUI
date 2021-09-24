@@ -61,16 +61,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		55CE49AD26F2122700EAF5A7 /* ToastMessage */ = {
-			isa = PBXGroup;
-			children = (
-				55CE49A726F20E8300EAF5A7 /* CreateBottomSolidMessage.swift */,
-				55CE49A426F20D7000EAF5A7 /* CreateBottomToastMessage.swift */,
-				55CE49AA26F210BC00EAF5A7 /* CreateTopSolidMessage.swift */,
-			);
-			path = ToastMessage;
-			sourceTree = "<group>";
-		};
 		55D0EACC26EF70C9007A0C07 = {
 			isa = PBXGroup;
 			children = (
@@ -92,8 +82,10 @@
 		55D0EAD726EF70C9007A0C07 /* Toast_Popup_tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				55CE49AD26F2122700EAF5A7 /* ToastMessage */,
 				55D0EAD826EF70C9007A0C07 /* Toast_Popup_tutorialApp.swift */,
+				55CE49A726F20E8300EAF5A7 /* CreateBottomSolidMessage.swift */,
+				55CE49A426F20D7000EAF5A7 /* CreateBottomToastMessage.swift */,
+				55CE49AA26F210BC00EAF5A7 /* CreateTopSolidMessage.swift */,
 				55D0EADA26EF70C9007A0C07 /* ContentView.swift */,
 				55D0EADC26EF70CC007A0C07 /* Assets.xcassets */,
 				55D0EAE126EF70CD007A0C07 /* Info.plist */,

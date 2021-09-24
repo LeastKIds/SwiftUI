@@ -13,6 +13,8 @@ struct ContentView: View {
     @State var shouldShowBottomSolidMessage : Bool = false
     @State var shouldShowBottomToastMessage : Bool = false
     @State var shouldShowTopToastMessage : Bool = false
+    
+    
 
     
     var body: some View {
@@ -70,16 +72,17 @@ struct ContentView: View {
             
         }   // ZStack
         .edgesIgnoringSafeArea(.all)    // 아래로 붙이기
+        
         .popup(isPresented: $shouldShowBottomSolidMessage, type: .floater(verticalPadding: 20), position: .bottom, animation: .easeInOut, autohideIn: 2, closeOnTap: true, closeOnTapOutside: true, view: {
-            ToastMessage(CreateBottomToastMessage)()
+            CreateBottomSolidMessage()
         })
         
         .popup(isPresented: $shouldShowBottomToastMessage, type: .floater(verticalPadding: 50), position: .bottom, animation: .spring(), autohideIn: 2, closeOnTap: true, closeOnTapOutside: true, view: {
-            ToastMessage;\CreateBottomToastMessage()
+            CreateBottomToastMessage()
         })
         
         .popup(isPresented: $shouldShowTopToastMessage, type: .floater(verticalPadding: 20), position: .top, animation: .easeInOut, autohideIn: 2, closeOnTap: true, closeOnTapOutside: true, view: {
-            ToastMessage;\CreateBottomToastMessage()
+            CreateTopSolidMessage()
         })
         
     }
